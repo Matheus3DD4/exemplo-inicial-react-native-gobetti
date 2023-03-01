@@ -7,6 +7,18 @@ export default function Header() {
   );
 }
 
+export default class Header extends Component {
+  render() {
+    return {
+      <View style={styles.header}>
+        <Text style={{ color: 'white', fontSize: 20 }}>
+          {this.props.titulo}
+        </Text>
+      </View>
+    };
+  }
+}
+
 const styles = StyleSheet.create({
   header: {
     backgroundColor: 'green',
